@@ -15,6 +15,7 @@ url: "http://yashwardhan7.github.io" # the base hostname & protocol for your sit
 permalink: /blog/:year/:month/:day/:title
 twitter_username: yashwardhan7
 github_username:  yashwardhan7
+future: false
 
 # Build settings
 markdown: kramdown

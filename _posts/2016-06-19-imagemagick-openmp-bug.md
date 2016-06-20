@@ -22,7 +22,7 @@ Here's the Python snippet I used:
 {% highlight python %}
   cmd = 'convert file.jpg -resize 266x200 -quality 50 thumb.jpg'
   custom_env = os.environ.copy()
-  custom_env['MAGICK_THREAD_LIMIT']='1'
-  proc=subprocess.Popen(cmd.split(), shell=False, env=custom_env)
+  custom_env['MAGICK_THREAD_LIMIT'] = '1'
+  proc = subprocess.Popen(cmd.split(), shell=False, env=custom_env)
   proc.wait()
 {% endhighlight %}

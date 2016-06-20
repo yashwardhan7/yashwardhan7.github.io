@@ -14,8 +14,8 @@ layout: default
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-        <!-- {{post.excerpt}}<a href="{{post.url}}">...Read more</a> -->
-        {{post.content | truncatewords:50}}<a href="{{post.url}}">Read more</a>
+        <!-- {{post.content | strip_html | truncatewords:50}}<a href="{{post.url}}">Read more</a> -->
+        {{post.excerpt}}<a href="{{post.url}}">...Read more</a>
         <!-- <br />Reading time: {{ page.content | number_of_words | divided_by:120 }} minutes -->
       </li>
     {% endfor %}
